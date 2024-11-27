@@ -12,7 +12,7 @@ connectDB();
 // Middleware
 // app.use(cors());
 app.use(cors({
-  origin: "https://<your-netlify-app-name>.netlify.app", // Replace with your Netlify frontend URL
+  origin: 'http://127.0.0.1:5500', // Replace with your Netlify frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true, // Include if cookies or credentials are used
 }));
