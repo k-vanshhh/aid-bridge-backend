@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/dc9a176b-fc9a-4b8f-844f-097c13a6bc1d/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/AidBridgeBackend",
+    "appService.deploySubpath": "."
+}
