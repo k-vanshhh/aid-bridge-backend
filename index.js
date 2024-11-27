@@ -13,7 +13,7 @@ connectDB();
 // app.use(cors());
 app.use(cors({
   // origin: 'http://127.0.0.1:5500',
-  origin: "https://aid-bridge-frontend.vercel.app/", // Replace with your Netlify frontend URL
+  origin: ['https://aid-bridge-frontend.vercel.app', 'http://127.0.0.1:5500'],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true, // Include if cookies or credentials are used
 }));
