@@ -10,7 +10,13 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: "https://<your-netlify-app-name>.netlify.app", // Replace with your Netlify frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true, // Include if cookies or credentials are used
+}));
+
 app.use(express.json());
 
 // Simple auth check
